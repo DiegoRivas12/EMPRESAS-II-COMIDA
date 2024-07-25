@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de chompas</title>
+ 
+ 
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/jquery-1.11.2.js"></script>
+ 
+</head>
+ 
+<body>
+ 
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="/userHome">Regresar</a>
+                    </li>
+                    <li role="presentation"><a href="/logout">&nbsp;Cerrar Sesión</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Aplicación Web de reclamos</h3>
+        </div>
+        <section>
+            <form class="form-horizontal" method="post" action="/addReclamo">
+                <fieldset>
+ 
+                    <!-- Form Name -->
+                    <legend>Agrega un reclamo</legend>
+                    
+ 
+                    <!-- Textarea -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="txtPost">Descripción</label>
+                        <div class="col-md-4">
+                            <textarea class="form-control" id="txtPost" name="inputReclamo"></textarea>
+                        </div>
+                    </div>
+ 
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="singlebutton1"></label>
+                        <div class="col-md-4">
+                            <input id="singlebutton1" name="singlebutton1" class="btn btn-primary" type="submit" value="Enviar" />
+                        </div>
+                    </div>
+ 
+                </fieldset>
+            </form>
+ 
+        </section>
+        <footer class="footer">
+            <p>&copy; Ciencia de la Computación - UNSA</p>
+        </footer>
+ 
+    </div>
+</body>
+ 
+</html>
